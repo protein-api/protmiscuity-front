@@ -1,0 +1,148 @@
+#contentThree {
+  width: 930px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 120px 20px 120px;
+  z-index: 3;
+  position: relative;
+}
+
+#contentThree .div.mat-card {
+  width: 30%;
+  margin: 10px;
+  display: inline-block;
+}
+.card-toolbar{
+  padding-top: 15px;
+  height: 100px;
+  margin: 0px;
+
+}
+.mat-toolbar .mat-toolbar-row{
+
+
+
+}
+.sampleClass{
+  width: 20%;
+  margin: 12px;
+  display: inline-block;
+  padding: 0px;
+  height: 350px;
+
+}
+.list-item-header{
+  color: white;
+  width: inherit;
+}
+.list-item-card{
+  font-size: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px
+}
+.footer-values-container{
+  margin-bottom: 2px;
+  margin-top: 2px;
+  width: 33.3%;
+  padding:10px;
+  box-sizing: border-box;
+  text-align: center;
+  display: block;
+
+}
+
+
+
+.header-card{
+  color: #c62828;
+}
+
+.footer-container{
+  display: flex !important;
+}
+
+.icon-elements-view {
+  width: 40px;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  border-radius: 50%;
+  box-sizing: content-box;
+
+}
+.button-icon{
+  width: 32px;
+  height: 32px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  md-icon{
+    height: 100%;
+    width: 100%;
+  }
+}
+.icon-list{
+  width: 32px;
+  height: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+.md-headline {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.list{
+  display: inline-flex;
+  flex: 1;
+  padding: 16px 0;
+  text-overflow: ellipsis;
+
+}
+
+.footer-content{
+  width: 33%;
+  height: 100%;
+  align-content: center;
+  h4{
+    height: 30%;
+  }
+  p{
+    height: 70%;
+  }
+}
+
+.header-content{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  h2{
+    display: block;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+  }
+  label{
+    display: block;
+    overflow: hidden;
+    overflow-wrap: break-word;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  #contentThree, #contentThree .mat-card {
+    width: 100%;
+  }
+
+
+
+}

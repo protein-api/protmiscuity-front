@@ -1,0 +1,21 @@
+<div class="section">
+  <search-component class="search-component"></search-component>
+</div>
+
+<div class="section">
+  <div class="row" >
+      <div *ngFor="let protein of proteins" (click)="showProtein(protein.id)">
+        <app-protein-card [protein]="protein"></app-protein-card>
+    </div>
+  </div>
+</div>
+
+<div class="section no-pad-bot" id="index-banner" *ngIf="isEmptyList">
+  <div class="container">
+    <br><br>
+    <div class="row center">
+      <h5 class="header col s12 light">No proteins were found</h5>
+    </div>
+    <br><br>
+  </div>
+</div>

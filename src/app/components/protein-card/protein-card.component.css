@@ -1,0 +1,22 @@
+.hand {
+  cursor: pointer;
+}
+
+.ico-red{
+  fill: red;
+  color: red;
+}
+
+.ico-white{
+  fill: white;
+}
+
+.img-small {
+  width: 15%;
+  height: 15%;
+}
+
+.img-medium {
+  width: 35%;
+  height: 35%;
+}

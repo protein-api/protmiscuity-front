@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col s2">
+      
+      <select materialize="material_select" [(ngModel)]="selectedSearch">
+        <option value="" disabled>Search by:</option>
+        <option value="PROTEIN" selected>Protein</option>
+        <option value="REACTION" >Reaction</option>
+        <option value="ORGANISM" >Organism</option>
+      </select>
+
+<!--     <select [(ngModel)]="selectedSearch" materialize="material_select">
+        <option [ngValue]="" disabled>Search by:</option>
+        <option selected>Protein</option>
+        <option [ngValue]=2>Reaction</option>
+        <option [ngValue]=3>Organism</option>
+    </select> -->
+
+    </div>
+    <div class="col s9">
+      <div class="search-wrapper">
+        <input [(ngModel)]="textSearch" placeholder="Search proteins by name or uniprot" (keyup.enter)="search()">
+      </div>
+    </div>
+    <div class="col s1">
+      <a class="btn-floating redLight" (click)="search()"><i class="material-icons">search</i></a>
+    </div>
+  </div>
+  <div class="row center">
+    <a class="waves-effect waves-light btn-large redLight" (click)="getAllProteins()">Show all proteins</a>
+  </div>
+</div>
