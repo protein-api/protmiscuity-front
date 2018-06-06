@@ -19,10 +19,24 @@
           <h5 style="color:#616161" id="part1">
             <blockquote>ProtMiscuity</blockquote>
           </h5>
-          <p> ProtMiscuity is a well curated database of promiscuous proteins that aims to centralize our current knowledge of the promiscuity phenomena. The collection of protein data was recruited from bibliography and extensively linked with other databases with structural, functional and conformational information.
-ProtMiscuity database provides a useful protein dataset with for exploring new possible catalytic activities or substrates, as well as complete information for exploring the relationship between structure and function for the development of new predictions tools.</p>
-<p>ProtMiscuity can be browsed by the protein name or <a href="http://www.uniprot.org/">Uniprot</a> id, or through the information related with its canonical and promiscuous activities represented by EC numbers. Functional information is linked with structural and conformational information available in <a href='https://www.rcsb.org/'>PDB</a> and <a href='http://ufq.unq.edu.ar/codnas/index.php'>CoDNaS</a> databases. Users can get protein information by searching with their names or Uniprot codes, or looking for the substrates and products related with them. A typical query such as the protein name retrieves general information about its family name, source organism, the number of promiscuous  and canonical reactions in which it is involved and the number of structures related.</p>
-<p>ProtMiscuity database provides a useful protein dataset with for exploring new possible catalytic activities or substrates, as well as complete information for exploring the relationship between structure and function for the development of new predictions tools.</p>
+          <p> ProtMiscuity is a manually curated database of promiscuous proteins that aims to centralize our current knowledge of the promiscuity
+phenomenon. The collection of protein data was recruited from bibliography and extensively linked with other databases with structural, functional and conformational information. ProtMiscuity provides a useful protein dataset for exploring new possible catalytic
+activities or substrates, as well as complete information for understanding the relationship between structure and function. It could also help in the development of novel predictive tools ofprotein features.
+<p>ProtMiscuity can be browsed by
+protein name or <a href="http://www.uniprot.org/">UniProt</a> ID, or through the information related with
+its canonical and promiscuous activities as represented by EC numbers.
+Functional information is linked with structural and conformational
+information available in <a href="https://www.rcsb.org/">PDB</a> and <a href="http://ufq.unq.edu.ar/codnas/index.php">CoDNaS</a> databases. Users can get
+protein information by searching with their names or Uniprot codes, or
+looking for the substrates and products related with them. A typical
+query such as the protein name retrieves general information about its
+protein family, source organism, the number of promiscuous and
+canonical reactions in which it is involved and the number of
+structures related.</p>
+<p>ProtMiscuity database provides a useful protein dataset with
+for exploring new possible catalytic activities or substrates, as well
+as complete information for exploring the relationship between
+structure and function for the development of new predictions tools.</p>
         </div>
 
         <div class="col s12">
@@ -30,8 +44,17 @@ ProtMiscuity database provides a useful protein dataset with for exploring new p
             <blockquote>Implementation</blockquote>
           </h5>
           <p>
-            The database was developed through the implementation of web-scraping and text mining techniques using standard libraries in the programming language Python. More than 500 scientific publications were thus recruited from the different databases and scientific journals websites, which were then inspected manually for their relevance to protein promiscuity. 301 publications were finally selected, based on text criteria, and they were extensively revised to extract the important data for the database. From this process we obtained a total of 65 promiscuous proteins with one or more characterized promiscuous activities, corresponding to 2480 PDB structures from 42 different organisms.
-          </p>
+            The database was developed through
+  the implementation of web-scraping and text mining techniques using
+  standard libraries in the programming language Python. More than 500
+  scientific publications were thus recruited from the different
+  databases and scientific journals websites, which were then inspected
+  manually for their relevance for protein promiscuity. 301 publications
+  were finally selected, based on text criteria, and they were
+  extensively revised to extract the important data for the database.
+  From this process we obtained a total of 65 promiscuous proteins with
+  one or more characterized promiscuous activities, representing 42
+  different organisms and corresponding to 2480 PDB structures (see <a href="../Stats">Stats</a>)          </p>
 
           <div class="col s12">
             <img src="../../assets/tutorial_img/implementation.png" class="img-medium" style="width:100%">
@@ -41,7 +64,9 @@ ProtMiscuity database provides a useful protein dataset with for exploring new p
              Reactions, both promiscuous and canonical, were characterized by information available in the literature: substrates, products, Km, Kcat, active site definition and reaction conditions. Likewise, substrates and products related to each reaction described were linked to the information available in PDB Ligand Expo (Sitzmann et al. 2012) and PubChem (Kim et al. 2016) to obtain possible ligands with chemical similarity. This allows the user to explore alternatives for future experimental and industrial applications, biotechnological and drug design.
           </p>
           <p>
-             In order to provide the users with conformational as well as functional information, each protein was linked to other databases such as PDB (Touw et al. 2015), CoDNaS (Monzon et al. 2016), KEGG (Tanabe and Kanehisa 2012), Uniprot (Pundir et al. 2017), Catalytic Site Atlas (Furnham et al. 2014) and QuickGo (Binns et al. 2009). The web app implemented in HTML, CSS, JavaScript, Angular4 and Node supports multiple devices.
+             In order to provide the users with conformational as well as functional information, each protein was linked to other databases such as <a href="https://www.rcsb.org/">PDB</a>, <a href="http://ufq.unq.edu.ar/codnas/index.php">CoDNaS</a>, <a href="https://www.genome.jp/kegg/">KEGG</a>, <a href="http://www.uniprot.org/">Uniprot</a>, <a href="http://www.ebi.ac.uk/thornton-srv/databases/CSA/">Catalytic Site Atlas</a> and <a href="https://www.ebi.ac.uk/QuickGO/">QuickGo</a>.The responsive
+online interface of ProtMiscuity was implemented in HTML, CSS,
+JavaScript, Angular and Node.JS.
           </p>
         </div>
 
@@ -50,7 +75,9 @@ ProtMiscuity database provides a useful protein dataset with for exploring new p
             <blockquote>Example</blockquote>
           </h5>
           <p>
-            The <a href="http://www.uniprot.org/uniprot/P02769">Bovine serum albumin</a> is the main protein of plasma and also a <a href="../protein/1">very studied</a> promiscuous protein. It has a good binding capacity for water, Ca(2+), Na(+), K(+), fatty acids, hormones, bilirubin and drugs. Its main function is the regulation of the colloidal osmotic pressure of blood. Major zinc transporter in plasma, typically binds about 80% of all plasma zinc. Bovin serum albumin has 8 conformers in<a href="http://ufq.unq.edu.ar/codnas/retrieve.php?type=main&secure_pass=1526837797592&search=P02769"> CoDNaS</a> with an RMSD average of 0.76.
+            The <a href="http://www.uniprot.org/uniprot/P02769">Bovine serum albumin</a> is the main protein of plasma and also a <a href="../protein/1">very studied</a> promiscuous protein. It has a good binding capacity for water, Ca(2+), Na(+), K(+), fatty acids, hormones, bilirubin and drugs. Its main function is the regulation of the colloidal osmotic pressure of blood. It is a major zinc
+transporter in plasma, typically binding about 80% of all plasma
+zinc. Bovin serum albumin has 8 conformers in<a href="http://ufq.unq.edu.ar/codnas/retrieve.php?type=main&secure_pass=1526837797592&search=P02769"> CoDNaS</a> with an average RMSD of 0.76 A.
           </p>
           <div class='col6' style="width:100%;height:500px">
           <!-- Embed Web3DMol, use HTML iframe -->
@@ -60,17 +87,8 @@ ProtMiscuity database provides a useful protein dataset with for exploring new p
          The bovine serum albumin (BSA) has been applied to different promiscuous reactions such as the Henry reaction and several carbon-carbon bond-forming reactions (Ardanaz S. et. Al 2018, Reetz MT. et al 2007, Albanese DCM et al 2015).
        </p>
        <p>
-          In Protmiscuity, the BSA has 4 promiscuous different reactions (Henry reaction,Markonikov addition, Kemp elimination and Biginelli reaction) asociated with the same active site (Lys 222), located in its major cavity. Some of the conditions that promotes these promiscuous reactions are the neat organic solvent presence (acetone, ethanol) or mixtures of solvents with water. Hight temperatures favor the catalysis too. <a href="https://pubchem.ncbi.nlm.nih.gov/compound/aniline">Aniline</a> and <a href="https://pubchem.ncbi.nlm.nih.gov/compound/dihydroxyacetone">dihydroxyacetone</a> are examples of substrates on which BSA can act.
+          In Protmiscuity, the BSA has 4 promiscuous different reactions (Henry reaction, Markonikov addition, Kemp elimination and Biginelli reaction) associated with the same active site (Lys 222), located in its major cavity. Some of the conditions that promotes these promiscuous reactions are the neat organic solvent presence (acetone, ethanol) or mixtures of solvents with water. High temperatures favor the catalysis too. <a href="https://pubchem.ncbi.nlm.nih.gov/compound/aniline">Aniline</a> and <a href="https://pubchem.ncbi.nlm.nih.gov/compound/dihydroxyacetone">dihydroxyacetone</a> are examples of substrates on which BSA can act.
        </p>
-        </div>
-
-        <div class="col s12">
-          <h5 style="color:#616161" id="part4">
-            <blockquote>A bit more about Promiscuity</blockquote>
-          </h5>
-          <p>
-            Even though protein promiscuity has been extensively studied in the last few years, the term itself is not well defined yet and has been used to describe many different phenomena, with different classification schemes proposed (Hult and Berglund 2007; López-Iglesias and Gotor-Fernández 2015). From a chemical and functional point of view, catalytic promiscuity may be described as the ability of an enzyme to catalyse a secondary activity at the same active site where its canonic or primary activity occurs. It has been classified depending on the chemistry of the reaction (Copley 2003) (Bornscheuer and Kazlauskas 2004). Khersonsky and Tawfik (Khersonsky and Tawfik 2010) described catalytic promiscuity as an enzyme's capability to catalyze a reaction different from that for what it evolved. But, from a biological perspective, the term promiscuity may imply not only catalysis, chemical-functional relationship and evolutionary information, but  cellular function too (Nobeli et al. 2009). Due to these multiple perspectives of study about promiscuity and its relation with protein biological function and evolution, it is important to perform a systematic analysis of promiscous proteins.
-          </p>
         </div>
 
     </div>

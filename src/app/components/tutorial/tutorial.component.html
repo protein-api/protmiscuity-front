@@ -7,19 +7,9 @@
       </h5>
     </div>
 
-    <div class="col s12">
-    <p style="font-size: 18px">There are many ways to find your protein in ProtMiscuity</p>
-  </div>
-
-  <div class="col s12">
-  <h5 style="color:#616161">
-    <blockquote>Search by Protein Name</blockquote>
-  </h5>
-</div>
-
 <div class="col s12">
   <div class="col s6">
-  <p style="font-size: 18px">The search is by default set by protein or Uniprot id. The user can write UniProt id or the protein name in the the field and click the search button.</p>
+  <p style="font-size: 18px">There are many ways to find your protein in ProtMiscuity. The search is set by default to protein entries. The user should specify a UniProt ID or a common protein name in the the search field and click the search button. After the search, ProtMiscuity will show the results page with one card per protein. The user can press the desired card to retrieve all the information available for the protein.</p>
   <div class="row margin-right">
     <a class="waves-effect waves-light btn-large red" (click)="getAllProteins()" href='../proteins'>Search a protein</a>
   </div>
@@ -32,35 +22,30 @@
 
 <div class="col s12">
 <h5 style="color:#616161">
-  <blockquote>Advanced search</blockquote>
+  <blockquote>Alternative search</blockquote>
 </h5>
 </div>
 <div class="col s6">
     <ul>
-      <li style="font-size: 18px;margin-left: 35px"><strong> By organism </strong></li><p style="margin-left: 35px;font-size: 18px">By clicking this option, the user will obtain all the promiscuous proteins related with the organism of interest.</p>
-      <li style="font-size: 18px;margin-left: 35px"><strong>By reaction</strong></li><p style="margin-left: 35px;font-size: 18px">By clicking this option, the user will obtain all the proteins having this promiscuous or canonic reaction.</p>
+      <li style="font-size: 18px;margin-left: 35px"><strong> By organism </strong></li><p style="margin-left: 35px;font-size: 18px">The user can also search for all proteins related with the organism of interest by selecting 'Organism' from the drop-down menu</p>
+      <li style="font-size: 18px;margin-left: 35px"><strong>By reaction</strong></li><p style="margin-left: 35px;font-size: 18px">The user can also search for all the proteins having this promiscuous or canonic reaction.</p>
     </ul>
     <p style="font-size: 18px">After a search, the results page show a card where you can press in order to get the all the information
     available of this protein.</p>
 </div>
 <div class="col s6">
-  <div class="col s6">
   <img src="../../assets/tutorial_img/img2_a.png" class="img-medium" style="width:100%">
-</div>
-    <div class="col s6">
-  <img src="../../assets/tutorial_img/img2_b.png" class="img-medium" style="width:100%">
-</div>
 </div>
 
 <div class="col s12">
 <h5 style="color:#616161">
-  <blockquote>Visualazing protein data</blockquote>
+  <blockquote>Visualizing protein data</blockquote>
 </h5>
 </div>
 
 <div class="col s12">
 <div class="col s6">
-<p style="font-size: 18px">All the information is collapsed and listed in five items in which the user can search for the specific information of interest: general information, sequence and active sites information, sctructural information and visualization and conformational dyversity and external links.</p>
+<p style="font-size: 18px">All the information is collapsed and listed in five items in which the user can search for the specific information of interest: general information, sequence and active sites information, structural information, including conformational diversity, and external links.</p>
 <div class="row margin-right">
   <a class="waves-effect waves-light btn-large red" (click)="getAllProteins()" href='../about#part3'>Example</a>
 </div>
@@ -72,13 +57,13 @@
 
 <div class="col s12">
 <h5 style="color:#616161">
-  <blockquote>Genaral Information</blockquote>
+  <blockquote>General Information</blockquote>
 </h5>
 </div>
 
 <div class="col s12">
 <div class="col s6">
-<p style="font-size: 18px">The general information section includes: the protein's common name, the uniprot and the kegg ids, the organism from which the protein comes from and the protein family name.</p>
+<p style="font-size: 18px">The general information section includes: the protein's common name, the UNIPROT and the KEGG IDs, the organism from which the protein comes from and the protein family name.</p>
 <div class="row margin-right">
   <a class="waves-effect waves-light btn-large red" (click)="getAllProteins()" href='../about#part3'>Example</a>
 </div>
@@ -96,7 +81,7 @@
 
 <div class="col s12">
 <div class="col s6">
-<p style="font-size: 18px">This section has all the information recruided about canonic and promiscuous actives sites. This information is contextualized with the impormation provided by ProViz about disorder, PDB mapping,pFAM and MobiDB data base.</p>
+<p style="font-size: 18px">This information is placed in context with cross-references (provided by <a href="http://proviz.ucd.ie">ProViz</a>) about PFAM domains, structural information through PDB mapping and intrinsic disorder as annotated in ProViz.</p>
 <div class="row margin-right">
   <a class="waves-effect waves-light btn-large red" (click)="getAllProteins()" href='../about#part3'>Example</a>
 </div>
@@ -115,7 +100,7 @@
 
 <div class="col s12">
 <div class="col s6">
-<p style="font-size: 18px">Structural visualization of all PDB related with the protein of interest. All the PDBs are represented in clckable cards. The user can acces the visualizator by clicking on the cards and customize the view by selecting the style.</p>
+<p style="font-size: 18px">Structural visualization of all PDB ​structures ​related with the protein of interest. All the PDBs are represented in cl​i​ckable cards. The user can acces​s​ the visualizat​ion​ by clicking on the cards and ​customize the view.</p>
 <div class="row margin-right">
   <a class="waves-effect waves-light btn-large red" (click)="getAllProteins()" href='../about#part3'>Example</a>
 </div>
@@ -133,7 +118,7 @@
 
 <div class="col s12">
 <div class="col s6">
-<p style="font-size: 18px">ProtMiscuity provides conformational dyversity information by the relation between the protein searched and CoDNAs databaes.</p>
+<p style="font-size: 18px">ProtMiscuity provides conformational d​i​versity information by ​cross-referencing the protein searched with the <a href="http://ufq.unq.edu.ar/codnas/index.php">CoDNaS</a> databa​se.</p>
 <div class="row margin-right">
   <a class="waves-effect waves-light btn-large red" (click)="getAllProteins()" href='../about#part3'>Example</a>
 </div>
