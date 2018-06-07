@@ -26,7 +26,7 @@ export class StatsComponent implements OnInit {
           "baseFont": "Verdana",
           "baseFontSize": "14",
           "palettecolors":"#ff5252",
-          "caption": "Organisms frequences",
+          "caption": "Distribution of organisms in ProtMiscuity",
           "subCaption": "Representation of organisms",
           "numberprefix": "",
           "showValues": "0",
@@ -95,8 +95,8 @@ export class StatsComponent implements OnInit {
           "showValues": "0",
           "baseFontSize": "14",
           "palettecolors":"#ff5252",
-          "caption": "Protein families frequences",
-          "subCaption": "Representation of proteins families",
+          "caption": "Protein families in ProtMiscuity",
+          "subCaption": "Distribution of proteins per family",
           "numberprefix": "",
           "numberScaleUnit": "",
           "theme": "fint"
@@ -218,7 +218,7 @@ export class StatsComponent implements OnInit {
             "baseFont": "Verdana",
             "baseFontSize": "14",
             "palettecolors":"#bdbdbd,#212121,FF0000,#ff5252",
-            "caption": "Percentage of proteins with n promiscuous reactions",
+            "caption": "Distribution of promicuous reactions",
             "subcaption": "Number of promiscuos reactions per protein",
             "startingangle": "120",
             "showlabels": "0",
@@ -259,7 +259,7 @@ export class StatsComponent implements OnInit {
       "dataSource": {
         "chart": {
             "caption": "Taxonomy",
-            "subcaption": "Percentage of promicuous proteins per kindom",
+            "subcaption": "Percentage of promicuous proteins per kingdom",
             "palettecolors":"FF0000,#212121,#bdbdbd",
             "startingangle": "120",
             "showlabels": "0",
@@ -281,7 +281,7 @@ export class StatsComponent implements OnInit {
                 "value": "6042000"
             },
             {
-                "label": "Archea",
+                "label": "Archaea",
                 "value": "0208400"
             }
         ]
