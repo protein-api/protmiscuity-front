@@ -18,11 +18,11 @@ export class StructureCardComponent implements OnInit {
   @Input() structure: any
   @Input() uniprot: any
   @Input() sitesActives: any
-  private structureLink: string
+  public structureLink: string
   private viewer:any
   private pvStructure:any
   private dmolUrl: SafeResourceUrl
-  private dmol: SafeHtml
+  public dmol: SafeHtml
 
   constructor(private sanitizer: DomSanitizer,) {}
 

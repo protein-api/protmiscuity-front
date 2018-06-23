@@ -19,7 +19,7 @@ export class ProteinFullViewComponent implements OnInit {
   private isEdit:boolean;
   private proteinId:string;
   private showDois:boolean = false;
-  private structures:any[] = [];
+  public structures:any[] = [];
 
   @Input() protein: any;
 

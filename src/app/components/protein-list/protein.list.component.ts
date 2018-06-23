@@ -14,8 +14,8 @@ export class ProteinListComponent implements OnInit{
     displayedColumns = ['nombre', 'codigoUniProt', 'organismo', 'familia'];
 
     private searchText:string;
-    private isEmptyList:boolean = false;
-    private proteins = [];
+    public isEmptyList:boolean = false;
+    public proteins = [];
     private subscription: Subscription;
 
     constructor(private route:ActivatedRoute, private proteinDataService:ProteinDataService, private router:Router, private changeDetector : ChangeDetectorRef){

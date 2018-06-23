@@ -2,29 +2,24 @@ import { Injectable } from "@angular/core"
 import { Http } from "@angular/http"
 import { Observable } from 'rxjs'
 import { Subject } from 'rxjs'
-import { map, catchError } from 'rxjs/operators';
+import { map, catchError } from 'rxjs/operators'
+import { environment } from '../../environments/environment'
 
 
 @Injectable()
 export class ProteinDataService {
 
-  private urlApi:string = "http://localhost:8080"
+  private urlApi:string
   private subject = new Subject<any>()
   private proteinSubject = new Subject<any>()
 
   constructor(private http:Http){
+    this.urlApi = environment.protmiscuityApiUrl 
   }
 
   searchById(proteinaId:string){
-    // this.http.get('/api/proteins/get/' + proteinaId)
-    // .map((r:any) => r.json())
-    // .subscribe(result => {
-    //   this.proteinSubject.next(result);
-    // })
-
     this.http.get(this.urlApi+'/api/proteins/get/' + proteinaId).pipe(
       map((r:any) => r.json()),
-      //catchError(err => of('error found')),
     )
     .subscribe(result => {
       this.proteinSubject.next(result);

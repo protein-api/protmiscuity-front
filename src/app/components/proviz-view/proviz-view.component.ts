@@ -13,7 +13,7 @@ import { Protein } from "../../model/model"
 export class ProVizViewComponent {
 
   private url: SafeResourceUrl
-  private proviz: SafeHtml
+  public proviz: SafeHtml
   public protein: Protein
 
   constructor(private sanitizer: DomSanitizer, private proteinDataService:ProteinDataService) {

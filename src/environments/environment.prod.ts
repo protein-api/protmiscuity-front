@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  protmiscuityApiUrl: "http://ufq.unq.edu.ar"
 };
