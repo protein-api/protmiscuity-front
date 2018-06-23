@@ -1,14 +1,14 @@
 <nav  class="red lighten-1" role="navigation">
-  <div class="nav-wrapper container">
+  <div class="nav-wrapper">
     <a id="logo-container" routerLink="/home" class="brand-logo"><i class="material-icons"></i>ProtMiscuity</a>
     <ul class="right hide-on-med-and-down">
-      <li><a routerLink="/proteins"><i class="material-icons right">search</i>Proteins</a></li>
-      <li><a routerLink="/download"><i class="material-icons right">file_download</i>Download</a></li>
-      <li><a routerLink="/stats"><i class="material-icons right">equalizer</i>Stats</a></li>
-      <li><a routerLink="/tutorial"><i class="material-icons right">assistant</i>Tutorial</a></li>
-      <li><a routerLink="/contact"><i class="material-icons right">chat</i>Contact</a></li>
-      <li><a routerLink="/about"><i class="material-icons right">info_outline</i>About</a></li>
-      <li><a routerLink="/faqs"><i class="material-icons right">live_help</i>FAQs</a></li>
+      <li [routerLinkActive]="['active']"><a [routerLink]="['/proteins']"><i class="material-icons right">search</i>Proteins</a></li>
+      <li [routerLinkActive]="['active']"><a [routerLink]="['/download']"><i class="material-icons right">file_download</i>Download</a></li>
+      <li [routerLinkActive]="['active']"><a [routerLink]="['/stats']"><i class="material-icons right">equalizer</i>Stats</a></li>
+      <li [routerLinkActive]="['active']"><a [routerLink]="['/tutorial']"><i class="material-icons right">assistant</i>Tutorial</a></li>
+      <li [routerLinkActive]="['active']"><a [routerLink]="['/contact']"><i class="material-icons right">chat</i>Contact</a></li>
+      <li [routerLinkActive]="['active']"><a [routerLink]="['/about']"><i class="material-icons right">info_outline</i>About</a></li>
+      <li [routerLinkActive]="['active']"><a [routerLink]="['/faqs']"><i class="material-icons right">live_help</i>FAQs</a></li>
     </ul>
 
     <ul id="nav-mobile" class="side-nav">
