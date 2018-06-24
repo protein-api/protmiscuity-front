@@ -4,7 +4,7 @@
       
       <select materialize="material_select" [(ngModel)]="searchType">
         <option value="" disabled>Search by:</option>
-        <option value="PROTEIN" selected>Protein</option>
+        <option value="PROTEIN" selected class="red">Protein</option>
         <option value="REACTION" >Reaction</option>
         <option value="ORGANISM" >Organism</option>
       </select>
@@ -12,7 +12,7 @@
     </div>
     <div class="col s9">
       <div class="search-wrapper">
-        <input [(ngModel)]="textSearch" placeholder="Search proteins by name or uniprot" (keyup.enter)="search()">
+        <input type="text" [(ngModel)]="textSearch" placeholder="Search proteins by name or uniprot" (keyup.enter)="search()">
       </div>
     </div>
     <div class="col s1">

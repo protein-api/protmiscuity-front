@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core"
+import { Component, OnInit, ViewEncapsulation } from "@angular/core"
 import { FormGroup, FormControl } from '@angular/forms'
 import { Router } from "@angular/router"
 import { ProteinDataService } from "../../services/protein.service"
@@ -7,8 +7,8 @@ import { SearchHelperService } from "../../services/search.helper.service"
 @Component({
     selector:'search-component',
     templateUrl:'./search.component.html',
-    styleUrls:['./search.component.scss']
-
+    styleUrls:['./search.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 
 export class SearchComponent implements OnInit {

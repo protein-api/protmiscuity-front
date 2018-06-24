@@ -1,57 +1,17 @@
+ul.dropdown-content.select-dropdown li:not(.disabled) span { 
+  color: #EF5350;
+}
+
 .search-bar{
   width: 100% ;
 }
 
-.dropdown-content li > span {
-  font-size: 16px;
-  color: red !important;
-  display: block;
-  line-height: 22px;
-  padding: 14px 16px;
-}
-
-ul.dropdown-content.select-dropdown li:not(.disabled) span { 
-  color: #EF5350 !important;
-}
-
 .redLight {
   background-color: #EF5350 !important;
+} 
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #EF5350 !important;
+  box-shadow: 0 1px 0 0 #EF5350 !important;
 }
-
-
-.search-form{
-  background: #fff;
-  position: relative;
-  border-radius: 2px;
-  margin-right: 1rem;
-  display: block;
-  max-width: 800px;
-
-
-  input{
-    color: #000;
-    font-size: 1rem;
-    padding: .95rem .75rem;
-    z-index: 2;
-    cursor: text;
-    text-indent: 30px;
-    border: none;
-    background: transparent;
-    width: 100%;
-    outline: 0;
-  }
-}
-
-  /* label color */
-  .input-field label {
-    color: #000;
-  }
-  /* label focus color */
-  .input-field input[type=text]:focus + label {
-    color: #000;
-  }
-  /* label underline focus color */
-  .input-field input[type=text]:focus {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
-  }
