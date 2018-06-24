@@ -69,6 +69,8 @@ export class StructureCardComponent implements OnInit {
     this.dmol = this.sanitizer.bypassSecurityTrustHtml(html)
   }
 
+  hasActiveSites = () => (this.sitesActives.sitiosActCan.length > 0 || this.sitesActives.sitiosActProm.length > 0)
+
   loadPdb = (pdbName) => {
     pv.io.fetchPdb('/assets/pv/pdbs/' + pdbName + '.pdb', (structure) => {
       // display the protein as cartoon, coloring the secondary structure

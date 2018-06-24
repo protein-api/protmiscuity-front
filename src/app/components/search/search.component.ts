@@ -33,6 +33,7 @@ export class SearchComponent implements OnInit {
   }
 
   getAllProteins = () => {
+    this.searchHelper.pop()
     this.router.navigateByUrl('/proteins')
     this.proteinDataService.getAll()
     this.textSearch = null
