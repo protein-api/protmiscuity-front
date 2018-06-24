@@ -27,8 +27,6 @@ export class ProteinDataService {
     
   }
 
-  
-
   getAll() {
     this.http.get(this.urlApi+'/api/proteins/getAll').pipe(
       map((r:any) => r.json())
@@ -38,7 +36,7 @@ export class ProteinDataService {
     })
   }
 
-  search(textSearch:string){
+  searchByProtein(textSearch:string){
     this.http.get(this.urlApi+'/api/proteins/search/' + textSearch).pipe(
       map((r:any) => r.json())
     ) 

@@ -7,15 +7,19 @@ export class SearchHelperService {
 
   constructor(){}
 
-  getSearchs(){
+  getAll(){
     return this.searchs
   }
 
-  getLastSearch(){
-      return this.searchs.push()
+  pop() {
+    return this.searchs.pop()
   }
 
-  addSearch(search) {
-      this.searchs.push(search)
+  get() {
+    return this.searchs.slice(-1).pop()
+  }
+
+  add(search) {
+    this.searchs.push(search)
   }
 }

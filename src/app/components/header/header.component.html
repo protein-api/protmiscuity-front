@@ -2,7 +2,7 @@
   <div class="nav-wrapper">
     <a id="logo-container" routerLink="/home" class="brand-logo"><i class="material-icons"></i>ProtMiscuity</a>
     <ul class="right hide-on-med-and-down">
-      <li [routerLinkActive]="['active']"><a [routerLink]="['/proteins']"><i class="material-icons right">search</i>Proteins</a></li>
+      <li [routerLinkActive]="['active']"><a (click)="goToProteins()"><i class="material-icons right">search</i>Proteins</a></li>
       <li [routerLinkActive]="['active']"><a [routerLink]="['/download']"><i class="material-icons right">file_download</i>Download</a></li>
       <li [routerLinkActive]="['active']"><a [routerLink]="['/stats']"><i class="material-icons right">equalizer</i>Stats</a></li>
       <li [routerLinkActive]="['active']"><a [routerLink]="['/tutorial']"><i class="material-icons right">assistant</i>Tutorial</a></li>

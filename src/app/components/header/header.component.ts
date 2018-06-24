@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { Router } from "@angular/router"
+import { SearchHelperService } from "../../services/search.helper.service"
 
 declare const $:any;
 
@@ -9,15 +11,20 @@ declare const $:any;
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router, private searchHelper:SearchHelperService) { }
 
   ngOnInit() {
-    this.initMaterializeCssComponents();
+    this.initMaterializeCssComponents()
   }
 
   initMaterializeCssComponents() {
-    $('.button-collapse').sideNav();
-    $(".dropdown-button").dropdown();
+    $('.button-collapse').sideNav()
+    $(".dropdown-button").dropdown()
+  }
+
+  goToProteins() {
+    this.searchHelper.pop()
+    this.router.navigateByUrl('/proteins')
   }
 
 }

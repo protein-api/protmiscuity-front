@@ -2,19 +2,12 @@
   <div class="row">
     <div class="col s2">
       
-      <select materialize="material_select" [(ngModel)]="selectedSearch">
+      <select materialize="material_select" [(ngModel)]="searchType">
         <option value="" disabled>Search by:</option>
         <option value="PROTEIN" selected>Protein</option>
         <option value="REACTION" >Reaction</option>
         <option value="ORGANISM" >Organism</option>
       </select>
-
-<!--     <select [(ngModel)]="selectedSearch" materialize="material_select">
-        <option [ngValue]="" disabled>Search by:</option>
-        <option selected>Protein</option>
-        <option [ngValue]=2>Reaction</option>
-        <option [ngValue]=3>Organism</option>
-    </select> -->
 
     </div>
     <div class="col s9">

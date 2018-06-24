@@ -17,21 +17,20 @@ export class SearchComponent implements OnInit {
   }
 
   textSearch: string
-  selectedSearch:string = 'PROTEIN'
+  searchType:string = 'PROTEIN'
 
   ngOnInit() {
-    if(this.searchHelper.getSearchs().length === 1) {
-        let lastSearch = this.searchHelper.getSearchs().slice(-1)[0]
-        this.textSearch = lastSearch.searchText
-        this.selectedSearch = lastSearch.searchType
+    const search = this.searchHelper.get()
+    if(search && !search.fromHome) {
+      this.textSearch = search.searchText
+      this.searchType = search.searchType
+      this.searchBy(this.searchType)
     }
   }
 
   selectChangeHandler(searchType:any) {
-    this.selectedSearch = searchType
+    this.searchType = searchType
   }
-
-  backClick(){}
 
   getAllProteins = () => {
     this.router.navigateByUrl('/proteins')
@@ -40,30 +39,25 @@ export class SearchComponent implements OnInit {
   }
 
   search = () => {
-    if(this.textSearch && this.selectedSearch) {
-      this.searchHelper.addSearch({searchType:this.selectedSearch, searchText:this.textSearch, goBack:false})
+    if(this.textSearch && this.searchType) {
+      this.searchHelper.pop()
+      this.searchHelper.add({searchType:this.searchType, searchText:this.textSearch, fromHome:false})
       this.router.navigateByUrl('/proteins')
-      if(this.selectedSearch === 'PROTEIN') {
-        //search by protein
-        console.log("search by protein")
-        this.proteinDataService.search(this.textSearch)
-      } else if(this.selectedSearch === 'REACTION') {
-        //search by reaction
-        this.proteinDataService.searchByReaction(this.textSearch)
-      } else {
-        //search by organism
-        this.proteinDataService.searchByOrganism(this.textSearch)
-      }
-      
+      this.searchBy(this.searchType)
     }
   }
 
-  onChangeSelect = ($event) => {
-    console.log($event)
-  }
-
-  selectChange($event) {
-    console.log($event)
+  searchBy(typeSearch) {
+    if(typeSearch === 'PROTEIN') {
+      //search by protein
+      this.proteinDataService.searchByProtein(this.textSearch)
+    } else if(typeSearch === 'REACTION') {
+      //search by reaction
+      this.proteinDataService.searchByReaction(this.textSearch)
+    } else {
+      //search by organism
+      this.proteinDataService.searchByOrganism(this.textSearch)
+    }
   }
   
 }
