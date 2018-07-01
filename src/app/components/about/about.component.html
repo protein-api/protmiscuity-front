@@ -24,10 +24,10 @@
 phenomenon. The collection of protein data was recruited from bibliography and extensively linked with other databases with structural, functional and conformational information. ProtMiscuity provides a useful protein dataset for exploring new possible catalytic
 activities or substrates, as well as complete information for understanding the relationship between structure and function. It could also help in the development of novel predictive tools ofprotein features.
 <p>ProtMiscuity can be browsed by
-protein name or <a href="http://www.uniprot.org/">UniProt</a> ID, or through the information related with
+protein name or <a href="http://www.uniprot.org/" target="_blank">UniProt</a> ID, or through the information related with
 its canonical and promiscuous activities as represented by EC numbers.
 Functional information is linked with structural and conformational
-information available in <a href="https://www.rcsb.org/">PDB</a> and <a href="http://ufq.unq.edu.ar/codnas/index.php">CoDNaS</a> databases. Users can get
+information available in <a href="https://www.rcsb.org/" target="_blank">PDB</a> and <a href="http://ufq.unq.edu.ar/codnas/index.php" target="_blank">CoDNaS</a> databases. Users can get
 protein information by searching with their names or Uniprot codes, or
 looking for the substrates and products related with them. A typical
 query such as the protein name retrieves general information about its
@@ -55,7 +55,7 @@ structure and function for the development of new predictions tools.</p>
   extensively revised to extract the important data for the database.
   From this process we obtained a total of 65 promiscuous proteins with
   one or more characterized promiscuous activities, representing 42
-  different organisms and corresponding to 2480 PDB structures (see <a href="/stats">Stats</a>)          </p>
+  different organisms and corresponding to 2480 PDB structures (see <a routerLink="/stats">Stats</a>)          </p>
 
           <div class="col s12">
             <img src="../../assets/tutorial_img/implementation.png" class="img-medium" style="width:100%">
@@ -65,7 +65,7 @@ structure and function for the development of new predictions tools.</p>
              Reactions, both promiscuous and canonical, were characterized by information available in the literature: substrates, products, Km, Kcat, active site definition and reaction conditions. Likewise, substrates and products related to each reaction described were linked to the information available in PDB Ligand Expo (Sitzmann et al. 2012) and PubChem (Kim et al. 2016) to obtain possible ligands with chemical similarity. This allows the user to explore alternatives for future experimental and industrial applications, biotechnological and drug design.
           </p>
           <p>
-             In order to provide the users with conformational as well as functional information, each protein was linked to other databases such as <a href="https://www.rcsb.org/">PDB</a>, <a href="http://ufq.unq.edu.ar/codnas/index.php">CoDNaS</a>, <a href="https://www.genome.jp/kegg/">KEGG</a>, <a href="http://www.uniprot.org/">Uniprot</a>, <a href="http://www.ebi.ac.uk/thornton-srv/databases/CSA/">Catalytic Site Atlas</a> and <a href="https://www.ebi.ac.uk/QuickGO/">QuickGo</a>.The responsive
+             In order to provide the users with conformational as well as functional information, each protein was linked to other databases such as <a href="https://www.rcsb.org/" target="_blank">PDB</a>, <a href="http://ufq.unq.edu.ar/codnas/index.php" target="_blank">CoDNaS</a>, <a href="https://www.genome.jp/kegg/" target="_blank">KEGG</a>, <a href="http://www.uniprot.org/" target="_blank">Uniprot</a>, <a href="http://www.ebi.ac.uk/thornton-srv/databases/CSA/" target="_blank">Catalytic Site Atlas</a> and <a href="https://www.ebi.ac.uk/QuickGO/" target="_blank">QuickGo</a>.The responsive
 online interface of ProtMiscuity was implemented in HTML, CSS,
 JavaScript, Angular and Node.JS.
           </p>
@@ -76,9 +76,9 @@ JavaScript, Angular and Node.JS.
             <blockquote>Example</blockquote>
           </h5>
           <p id="Example">
-            The <a href="http://www.uniprot.org/uniprot/P02769">Bovine serum albumin</a> is the main protein of plasma and also a <a href="/protein/1">very studied</a> promiscuous protein. It has a good binding capacity for water, Ca(2+), Na(+), K(+), fatty acids, hormones, bilirubin and drugs. Its main function is the regulation of the colloidal osmotic pressure of blood. It is a major zinc
+            The <a href="http://www.uniprot.org/uniprot/P02769" target="_blank">Bovine serum albumin</a> is the main protein of plasma and also a <a routerLink="/protein/1">very studied</a> promiscuous protein. It has a good binding capacity for water, Ca(2+), Na(+), K(+), fatty acids, hormones, bilirubin and drugs. Its main function is the regulation of the colloidal osmotic pressure of blood. It is a major zinc
 transporter in plasma, typically binding about 80% of all plasma
-zinc. Bovin serum albumin has 8 conformers in<a href="http://ufq.unq.edu.ar/codnas/entry.php?pool_name=3V03_A"> CoDNaS</a> with an average RMSD of 0.76 A.
+zinc. Bovin serum albumin has 8 conformers in<a href="http://ufq.unq.edu.ar/codnas/entry.php?pool_name=3V03_A" target="_blank"> CoDNaS</a> with an average RMSD of 0.76 A.
           </p>
           <div class='col6' style="width:100%;height:500px">
           <!-- Embed Web3DMol, use HTML iframe -->
@@ -88,7 +88,7 @@ zinc. Bovin serum albumin has 8 conformers in<a href="http://ufq.unq.edu.ar/codn
          The bovine serum albumin (BSA) has been applied to different promiscuous reactions such as the Henry reaction and several carbon-carbon bond-forming reactions (Ardanaz S. et. Al 2018, Reetz MT. et al 2007, Albanese DCM et al 2015).
        </p>
        <p>
-          In Protmiscuity, the BSA has 4 promiscuous different reactions (Henry reaction, Markonikov addition, Kemp elimination and Biginelli reaction) associated with the same active site (Lys 222), located in its major cavity. Some of the conditions that promotes these promiscuous reactions are the neat organic solvent presence (acetone, ethanol) or mixtures of solvents with water. High temperatures favor the catalysis too. <a href="https://pubchem.ncbi.nlm.nih.gov/compound/aniline">Aniline</a> and <a href="https://pubchem.ncbi.nlm.nih.gov/compound/dihydroxyacetone">dihydroxyacetone</a> are examples of substrates on which BSA can act.
+          In Protmiscuity, the BSA has 4 promiscuous different reactions (Henry reaction, Markonikov addition, Kemp elimination and Biginelli reaction) associated with the same active site (Lys 222), located in its major cavity. Some of the conditions that promotes these promiscuous reactions are the neat organic solvent presence (acetone, ethanol) or mixtures of solvents with water. High temperatures favor the catalysis too. <a href="https://pubchem.ncbi.nlm.nih.gov/compound/aniline" target="_blank">Aniline</a> and <a href="https://pubchem.ncbi.nlm.nih.gov/compound/dihydroxyacetone" target="_blank">dihydroxyacetone</a> are examples of substrates on which BSA can act.
        </p>
         </div>
 

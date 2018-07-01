@@ -39,6 +39,7 @@ import { LinksTableComponent } from './components/links-table/links-table.compon
 import { ReactionCardComponent } from './components/reaction-card/reaction-card.component';
 import { ReactionListComponent } from './components/reaction-list/reaction-list.component';
 import { StructureCardComponent } from './components/structure-card/structure-card.component';
+import { DownloadComponent } from './components/download/download.component';
 
 
 FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
@@ -63,7 +64,8 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
     LinksTableComponent,
     ReactionListComponent,
     ReactionCardComponent,
-    StructureCardComponent
+    StructureCardComponent,
+    DownloadComponent
   ],
   imports: [
     AppRoutingModule,
