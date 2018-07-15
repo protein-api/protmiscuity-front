@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app.routing';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 // fusion charts
 import * as FusionCharts from 'fusioncharts';
@@ -40,6 +41,7 @@ import { ReactionCardComponent } from './components/reaction-card/reaction-card.
 import { ReactionListComponent } from './components/reaction-list/reaction-list.component';
 import { StructureCardComponent } from './components/structure-card/structure-card.component';
 import { DownloadComponent } from './components/download/download.component';
+import { StructureListComponent } from './components/structure-list/structure-list.component';
 
 
 FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
@@ -65,7 +67,8 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
     ReactionListComponent,
     ReactionCardComponent,
     StructureCardComponent,
-    DownloadComponent
+    DownloadComponent,
+    StructureListComponent
   ],
   imports: [
     AppRoutingModule,
@@ -74,7 +77,8 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
     Angular2FontawesomeModule,
     FusionChartsModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    NgxPaginationModule
   ],
   providers: [
     ProteinDataService,

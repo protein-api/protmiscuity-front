@@ -25,6 +25,6 @@ export class ProteinCardComponent implements OnInit {
 
   getAmountReactions = () => this.protein.reacciones.length
 
-  getAmountStructures = () => this.protein.estructurasPDB[0] ? this.protein.estructurasPDB[0].codigo.split(",").length : 0
+  getAmountStructures = () => this.protein.estructurasPDB.length
 
 }

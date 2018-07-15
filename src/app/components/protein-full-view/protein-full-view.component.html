@@ -56,13 +56,7 @@
         <p class="flow-text"> Structures vizualization</p>
       </div>
       <div class="collapsible-body">
-
-        <div class="row" >
-          <div *ngFor="let structure of structures">
-            <app-structure-card [structure]="structure" [uniprot]="protein.codigoUniProt" [sitesActives]="protein.sitiosActivo"></app-structure-card>
-          </div>
-        </div>
-
+        <app-structure-list></app-structure-list>
       </div>
     </li>
 
