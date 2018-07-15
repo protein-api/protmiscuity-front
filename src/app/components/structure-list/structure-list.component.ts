@@ -12,11 +12,13 @@ export class StructureListComponent implements OnInit {
   protein: Protein
   structures: any
   currentPage: number = 1
+  hasStructures: boolean
 
   constructor(private proteinDataService:ProteinDataService) {
     this.proteinDataService.getSearchResultById().subscribe( result => {
       this.structures = result.estructurasPDB
       this.protein = result
+      this.hasStructures = this.structures.length > 0
     })
   }
 

@@ -1,9 +1,16 @@
-<div class="row" >
-  <div *ngFor="let structure of structures | paginate: { itemsPerPage: 36, currentPage: currentPage }">
-      <app-structure-card [structure]="structure" [uniprot]="protein.codigoUniProt" [sitesActives]="protein.sitiosActivo" ></app-structure-card>
+<div *ngIf="hasStructures">
+  <div class="row" >
+    <div *ngFor="let structure of structures | paginate: { itemsPerPage: 36, currentPage: currentPage }">
+        <app-structure-card [structure]="structure" [uniprot]="protein.codigoUniProt" [sitesActives]="protein.sitiosActivo" ></app-structure-card>
+    </div>
+  </div>
+  <div class="row center">
+    <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
   </div>
 </div>
-<div class="row center">
-  <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
+
+
+<div *ngIf="!hasStructures">
+  <p>This protein doesn't have any struture.</p>
 </div>
 

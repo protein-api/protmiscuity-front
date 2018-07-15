@@ -1,8 +1,11 @@
 <div class="col l3 m6 s12">
 
   <div class="card small red lighten-1 hoverable" >
-    <div class="card-content white-text hand" (click)="openReactionModal()">
-      <span class="card-title" title="{{reaction.nombre}}">{{reaction.nombre}}</span>
+    <br>
+    <div class="divider gray"></div>
+    <div class="center white-text hand" (click)="openReactionModal()" *ngFor="let name of getNames(reaction.nombre)">
+      <span class="card-title" >{{name}}</span>
+      <div class="divider gray"></div>
     </div>
     <div class="card-action hand" (click)="openReactionModal()">
       <p><strong>Ec:</strong> {{reaction.ec}}</p>
