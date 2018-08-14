@@ -15,10 +15,8 @@ import { DownloadComponent } from "./components/download/download.component";
 
 // Routing
 const appRoutes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'protein/:idProtein', component: ProteinFullViewComponent },
-    { path: 'proteins/:search', component: ProteinListComponent },
     { path: 'proteins', component: ProteinListComponent },
     { path: 'stats', component: StatsComponent },
     { path: 'tutorial', component: TutorialComponent },
@@ -26,7 +24,7 @@ const appRoutes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'faqs', component: FaqsComponent },
     { path: 'download', component: DownloadComponent},
-    { path: '**', redirectTo: '/home', pathMatch: 'full' }
+    { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ]
 
 @NgModule({
