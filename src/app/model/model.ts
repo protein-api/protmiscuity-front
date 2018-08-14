@@ -12,7 +12,7 @@ export class Protein {
     public estructurasPDB =[]
     public dois =[]
     public sitiosActivo:any
-
+    public notes
 }
 
 export class Enlace{
