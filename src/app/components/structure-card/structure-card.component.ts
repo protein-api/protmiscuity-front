@@ -18,7 +18,6 @@ export class StructureCardComponent implements OnInit {
 
   @Input() structure: any
   @Input() uniprot: any
-  @Input() sitesActives: any
   public structureLink: string
   private viewer:any
   private pvStructure:any

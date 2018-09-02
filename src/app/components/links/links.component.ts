@@ -18,7 +18,7 @@ export class LinksComponent implements OnInit {
 
   ngOnInit() {}
 
-  getLinks = (type) => (this.links.filter(link => link.tipo === type))
+  getLinks = (type) => (this.links.filter(link => link.tipo.toLowerCase() === type.toLowerCase()))
   getAmountLinks = (type) => this.links ? this.getLinks(type).length : 0
   hasLinks = (type) => (this.getAmountLinks(type) > 0)
 

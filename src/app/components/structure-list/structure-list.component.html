@@ -1,7 +1,7 @@
 <div *ngIf="hasStructures">
   <div class="row" >
     <div *ngFor="let structure of structures | paginate: { itemsPerPage: 36, currentPage: currentPage }">
-        <app-structure-card [structure]="structure" [uniprot]="protein.codigoUniProt" [sitesActives]="protein.sitiosActivo" ></app-structure-card>
+        <app-structure-card [structure]="structure" [uniprot]="protein.codigoUniProt"></app-structure-card>
     </div>
   </div>
   <div class="row center">
