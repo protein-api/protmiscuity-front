@@ -19,6 +19,8 @@ export class StructureListComponent implements OnInit {
       this.structures = result.estructurasPDB
       this.protein = result
       this.hasStructures = this.structures.length > 0
+
+      console.log(this.structures)
     })
   }
 
