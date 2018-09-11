@@ -9,7 +9,9 @@ import { AppRoutingModule } from './app.routing';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {NgxPaginationModule} from 'ngx-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule, MatSortModule } from '@angular/material';
 
 // fusion charts
 import * as FusionCharts from 'fusioncharts';
@@ -78,7 +80,10 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
     FusionChartsModule,
     FormsModule,
     HttpModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatSortModule
   ],
   providers: [
     ProteinDataService,

@@ -12,8 +12,24 @@ export class Protein {
     public estructurasPDB =[]
     public dois =[]
     public sitiosActivo:any
-    public notes
+    public notes:string
 }
+
+export interface IProtein {
+
+    id:number
+    codigoUniProt:string
+    nombre:string
+    secuencia:string
+    organismo:string
+    familia:string
+    codigoKegg:string
+    reacciones:any[]
+    estructurasPDB:any[]
+    dois:any[]
+    sitiosActivo:any
+    notes:string
+  }
 
 export class Enlace{
     public id:number;
