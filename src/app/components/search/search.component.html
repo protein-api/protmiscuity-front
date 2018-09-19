@@ -1,14 +1,13 @@
 <div class="container">
   <div class="row">
     <div class="col s2">
-      
+
       <select materialize="material_select" [(ngModel)]="searchType">
         <option value="" disabled>Search by:</option>
         <option value="PROTEIN" selected class="red">Protein</option>
         <option value="REACTION" >Reaction</option>
         <option value="ORGANISM" >Organism</option>
       </select>
-
     </div>
     <div class="col s9">
       <div class="search-wrapper">
@@ -18,7 +17,14 @@
     <div class="col s1">
       <a class="btn-floating redLight" (click)="search()"><i class="material-icons">search</i></a>
     </div>
+
+    <div class="row left col s12">
+          <div class="col s4"><p><a routerLink="/protein/1">Protein example: Albumin</a></p></div>
+          <div class="col s4"><p><a routerLink="/protein/11">Reaction example: L-aminoacylase</a></p></div>
+          <div class="col s4"><p><a routerLink="/protein/5">Organism example: Macrophoma commelinae</a></p></div>
+        </div>
   </div>
+
   <div class="row center">
     <a class="waves-effect waves-light btn-large redLight" (click)="getAllProteins()">Show all proteins</a>
   </div>

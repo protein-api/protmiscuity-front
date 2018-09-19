@@ -1,14 +1,14 @@
-<div class="col l3 m6 s12">
+<div class="col s12 m7 l2">
 
-  <div class="card small red lighten-1 hoverable" >
+  <div class="card-panel red lighten-1 hoverable" >
     <br>
     <div class="divider gray"></div>
     <div class="center white-text hand" (click)="openReactionModal()" *ngFor="let name of getNames(reaction.nombre)">
       <span class="card-title" >{{name}}</span>
       <div class="divider gray"></div>
     </div>
+
     <div class="card-action hand" (click)="openReactionModal()">
-      <p><strong>Ec:</strong> {{reaction.ec}}</p>
       <p><strong>Type:</strong> {{reaction.tipo}}</p>
     </div>
 
@@ -28,11 +28,11 @@
         </div>
         <div class="divider"></div>
         <br>
-        
+
         <div class="row">
-          <p>EC: <strong>{{reaction.ec}}</strong></p>
-          <div class="divider"></div>
           <p>Type: <strong>{{reaction.tipo}}</strong></p>
+          <div class="divider"></div>
+          <p>EC: <strong>{{reaction.EC}}</strong></p>
           <div class="divider"></div>
           <p>Notes: <strong>{{reaction.notes}}</strong></p>
           <div class="divider"></div>
