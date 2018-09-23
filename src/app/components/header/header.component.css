@@ -4,3 +4,9 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.logo {
+  margin-left: 15px;
+  width: 350px;
+  height: 60px;
+}

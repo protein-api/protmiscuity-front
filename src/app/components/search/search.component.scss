@@ -15,3 +15,21 @@ ul.dropdown-content.select-dropdown li:not(.disabled) span {
   border-bottom: 1px solid #EF5350 !important;
   box-shadow: 0 1px 0 0 #EF5350 !important;
 }
+
+.example:hover {
+  color: #EF5350;
+  cursor: pointer;
+}
+
+.separator {
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+}
+
+.examples {
+  padding-top: 0px !important;
+}
+
+.search {
+  margin-bottom: 0px !important;
+}

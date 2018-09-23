@@ -60,5 +60,19 @@ export class SearchComponent implements OnInit {
       this.proteinDataService.searchByOrganism(this.textSearch)
     }
   }
+
+  exampleProtein() {
+    this.searchType = 'PROTEIN'
+    this.textSearch = 'Albumin'
+  }
   
+  exampleReaction() {
+    this.searchType = 'REACTION'
+    this.textSearch = 'L-aminoacylase'
+  }
+
+  exampleOrganism() {
+    this.searchType = 'ORGANISM'
+    this.textSearch = 'Macrophoma commelinae'
+  }
 }

@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row">
+  <div class="row search">
     <div class="col s2">
 
       <select materialize="material_select" [(ngModel)]="searchType">
@@ -10,19 +10,19 @@
       </select>
     </div>
     <div class="col s9">
-      <div class="search-wrapper">
-        <input type="text" [(ngModel)]="textSearch" placeholder="Search proteins by name or uniprot" (keyup.enter)="search()">
-      </div>
+      <input type="text" [(ngModel)]="textSearch" placeholder="Search proteins by name or uniprot" (keyup.enter)="search()">
     </div>
     <div class="col s1">
       <a class="btn-floating redLight" (click)="search()"><i class="material-icons">search</i></a>
     </div>
+  </div>
 
-    <div class="row left col s12">
-          <div class="col s4"><p><a routerLink="/protein/1">Protein example: Albumin</a></p></div>
-          <div class="col s4"><p><a routerLink="/protein/11">Reaction example: L-aminoacylase</a></p></div>
-          <div class="col s4"><p><a routerLink="/protein/5">Organism example: Macrophoma commelinae</a></p></div>
-        </div>
+  <div class="row center examples">
+    <div class="col example" (click)="exampleProtein()">Example Protein: Albumin</div>
+    <div class="col separator">|</div>
+    <div class="col example" (click)="exampleReaction()">Example Reaction: L-aminoacylase</div>
+    <div class="col separator">|</div>
+    <div class="col example" (click)="exampleOrganism()">Example Organism: Macrophoma commelinae</div>
   </div>
 
   <div class="row center">
