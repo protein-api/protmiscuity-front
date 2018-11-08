@@ -1,6 +1,6 @@
 <div class="col s12 m7 l2">
 
-  <div class="card-panel red lighten-1 hoverable" >
+  <div class="card-panel red lighten-1 hoverable">
     <br>
     <div class="divider gray"></div>
     <div class="center white-text hand" (click)="openReactionModal()" *ngFor="let name of getNames(reaction.nombre)">
@@ -56,7 +56,7 @@
                     <th>Name</th>
                     <th>km</th>
                     <th>Kcat</th>
-                    <th>Kmcat</th>
+                    <th>Km/kcat</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -70,7 +70,7 @@
                     </td>
                     <td>{{cinetica.km}}</td>
                     <td>{{cinetica.kcat}}</td>
-                    <td>{{cinetica.kmcat}}</td>
+                    <td>{{cinetica.km_kcat}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -83,7 +83,7 @@
                       <th>Name</th>
                       <th>km</th>
                       <th>Kcat</th>
-                      <th>Kmcat</th>
+                      <th>Km/kcat</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -97,7 +97,7 @@
                       </td>
                       <td>{{cinetica.km}}</td>
                       <td>{{cinetica.kcat}}</td>
-                      <td>{{cinetica.kmcat}}</td>
+                      <td>{{cinetica.km_kcat}}</td>
                     </tr>
                   </tbody>
                 </table>
