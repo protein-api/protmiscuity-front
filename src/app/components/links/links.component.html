@@ -2,7 +2,6 @@
   <div class="col s12">
     <ul class="tabs">
       <li class="tab col s2" [class.disabled]="!hasLinks('doi')"><a class="active" href="#test1">References ({{getAmountLinks('doi')}})</a></li>
-      <!-- <li class="tab col s2" [class.disabled]="!hasLinks('molec_func')"><a href="#test2">Molecular Function ({{getAmountLinks('molec_func')}})</a></li> -->
       <li class="tab col s3" [class.disabled]="!hasLinks('codnas')"><a href="#test3">Conformational Diversity ({{getAmountLinks('codnas')}})</a></li>
       <li class="tab col s2" [class.disabled]="!hasLinks('pfam')"><a href="#test4">pfam ({{getAmountLinks ('pfam')}})</a></li>
       <li class="tab col s2" [class.disabled]="!hasLinks('go')"><a href="#test5">GO ({{getAmountLinks ('go')}})</a></li>
@@ -11,10 +10,6 @@
   <div id="test1" class="col s12">
       <br>
       <app-links-table *ngIf="links" [links]="getLinks('doi')" ></app-links-table>
-  </div>
-  <div id="test2" class="col s12">
-        <br>
-      <app-links-table *ngIf="links" [links]="getLinks('molec_func')" ></app-links-table>
   </div>
   <div id="test3" class="col s12">
       <br>
