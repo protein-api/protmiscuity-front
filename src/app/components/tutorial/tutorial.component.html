@@ -65,7 +65,7 @@
 
 <div class="col s12">
 <div class="col s6">
-<p style="font-size: 18px">The general information section includes: the protein's common name, the <a href="https://www.uniprot.org/">UNIPROT</a> (The UniProt Consortium, 2015) and the <a href="https://www.genome.jp/kegg/">KEGG</a> IDs (Minoru Kanehisa, 2016), the organism from which the protein comes from and the protein family name.</p>
+<p style="font-size: 18px">The general information section includes: the protein's common name, the <a href="https://www.uniprot.org/">UNIPROT</a> (The UniProt Consortium, 2015) and the <a href="https://www.genome.jp/kegg/">KEGG</a> IDs (Kanehisa et al., 2016), the organism from which the protein comes from and the protein family name.</p>
 <div class="row margin-right">
   <a class="waves-effect waves-light btn-large red" routerLink='/protein/1'>Example</a>
 </div>
@@ -83,7 +83,7 @@
 
 <div class="col s12">
 <div class="col s6">
-<p style="font-size: 18px">This information is placed in context with cross-references (provided by <a target="_blank" href="http://proviz.ucd.ie">ProViz</a> (Peter Jehl,2016)) about <a href="https://pfam.xfam.org/">PFAM</a> (Robert D. Finn, 2013) domains, structural information through PDB mapping and intrinsic disorder as annotated in ProViz.</p>
+<p style="font-size: 18px">This information is placed in context by residue-level information mapped from major databases of protein domains, secondary and tertiary structures, intrinsic disorder and binding sites, all provided by <a target="_blank" href="http://proviz.ucd.ie">ProViz</a> (Jehl et al.,2016).</p>
 <div class="row margin-right">
   <a class="waves-effect waves-light btn-large red" routerLink='/protein/1'>Example</a>
 </div>
@@ -93,6 +93,22 @@
 </div>
 </div>
 
+<div class="col s12">
+<h5 style="color:#616161">
+<blockquote>Reactions and Kinetics</blockquote>
+</h5>
+</div>
+<div class="col s12">
+<div class="col s6">
+<p style="font-size: 18px">ProtMiscuity provides information on the canonic and/or promiscuous reactions catalyzed by the protein. Clicking on a reaction card shows the reaction substrates and products, linked to <a href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a> (Kim et al., 2016) and with kinetic parameters (Km, kcat) when available.</p>
+<div class="row margin-right">
+  <a class="waves-effect waves-light btn-large red" routerLink='/protein/1'>Example</a>
+</div>
+</div>
+<div class="col s6">
+<img src="../../assets/tutorial_img/kinetics.png" class="img-medium" style="width:100%">
+</div>
+</div>
 
 <div class="col s12">
 <h5 style="color:#616161">
@@ -102,7 +118,7 @@
 
 <div class="col s12">
 <div class="col s6">
-<p style="font-size: 18px">Structural visualization of all <a href="https://www.rcsb.org/">PDB</a> ​structures related with the protein of interest is performed with <a href="http://3dmol.csb.pitt.edu/index.html">3Dmol.js</a> (Nicholas Rego, 2014). All the PDBs are represented in cl​i​ckable cards. The user can acces​s​ the visualizat​ion​ of the PDB structure with marks on the active sites, by clicking on the cards.</p>
+<p style="font-size: 18px">Structural visualization of all <a href="https://www.rcsb.org/">PDB</a> ​structures (Berman et al., 2000) related with the protein of interest is performed with <a href="http://3dmol.csb.pitt.edu/index.html">3Dmol.js</a> (Rego et al., 2014). All the PDBs are represented in cl​i​ckable cards. The user can acces​s​ the visualizat​ion​ of the PDB structure with marks on the active sites, by clicking on the cards.</p>
 <div class="row margin-right">
   <a class="waves-effect waves-light btn-large red" routerLink='/protein/1'>Example</a>
 </div>
@@ -120,7 +136,7 @@
 
 <div class="col s12">
 <div class="col s6">
-<p style="font-size: 18px">ProtMiscuity provides conformational d​i​versity information by ​cross-referencing the protein searched with the <a target="_blank" href="http://ufq.unq.edu.ar/codnas/index.php">CoDNaS</a> databa​se (Alexander M. Monzon, 2016).</p>
+<p style="font-size: 18px">ProtMiscuity provides conformational d​i​versity information by ​cross-referencing the protein searched with the <a target="_blank" href="http://ufq.unq.edu.ar/codnas/index.php">CoDNaS</a> databa​se (Monzon et al., 2016). It also links to original publications that provided promiscuous data, to the annotated <a href="https://pfam.xfam.org/">PFAM</a> entries found in the protein (Finn et al., 2016), and to the associated <a href="http://www.geneontology.org/">Gene Ontology</a> categories (Ashburner et al., 2000).</p>
 <div class="row margin-right">
   <a class="waves-effect waves-light btn-large red" routerLink='/protein/1'>Example</a>
 </div>
