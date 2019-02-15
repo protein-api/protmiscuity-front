@@ -4,15 +4,14 @@
 
 <div class="row">
   <div class="col">
-    <a class="btn-floating redLight" [class.gray]="showList" (click)="changeView(false)"><i class="material-icons">apps</i></a>
+    <a class="btn-floating redLight" [class.gray]="!showList" (click)="changeView(false)"><i class="material-icons">apps</i></a>
   </div>
   <div class="">
-    <a class="btn-floating redLight" [class.gray]="!showList" (click)="changeView(true)"><i class="material-icons">format_align_justify</i></a>
+    <a class="btn-floating redLight" [class.gray]="showList" (click)="changeView(true)"><i class="material-icons">format_align_justify</i></a>
   </div>
 </div>
 
-
-<div class="section" *ngIf="showList">
+<div class="section" *ngIf="!showList">
   <div class="row margin15">
     <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
       <ng-container matColumnDef="nombre">
@@ -37,7 +36,7 @@
   </div>
 </div>
 
-<div class="section" *ngIf="!showList">
+<div class="section" *ngIf="showList">
   <div class="row" >
       <div *ngFor="let protein of proteins" (click)="showProtein(protein.id)">
         <app-protein-card [protein]="protein"></app-protein-card>
