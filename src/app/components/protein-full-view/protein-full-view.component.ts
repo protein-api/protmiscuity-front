@@ -37,7 +37,7 @@ export class ProteinFullViewComponent implements OnInit {
 
 
   ngOnInit() {
-    $('.collapsible').collapsible()
+    $('.collapsible').collapsible();
     this.getProtein();
   }
 

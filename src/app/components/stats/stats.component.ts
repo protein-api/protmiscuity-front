@@ -222,8 +222,8 @@ export class StatsComponent implements OnInit {
             "baseFont": "Verdana",
             "baseFontSize": "14",
             "palettecolors":"#bdbdbd,#212121,FF0000,#ff5252",
-            "caption": "Distribution of promicuous reactions",
-            "subcaption": "Number of promiscuos reactions per protein",
+            "caption": "Distribution of promiscuous reactions",
+            "subcaption": "Number of promiscuous reactions per protein",
             "startingangle": "120",
             "showlabels": "0",
             "showlegend": "1",
@@ -263,7 +263,7 @@ export class StatsComponent implements OnInit {
       "dataSource": {
         "chart": {
             "caption": "Taxonomy",
-            "subcaption": "Percentage of promicuous proteins per kingdom",
+            "subcaption": "Percentage of promiscuous proteins per kingdom",
             "palettecolors":"FF0000,#212121,#bdbdbd",
             "startingangle": "120",
             "showlabels": "0",
