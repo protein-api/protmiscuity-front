@@ -1,0 +1,8 @@
+################################################################################################################################################################
+##############----- 						README					       				-----###################
+#################-- 		If you consider a certain protein is missing in ProtMiscuity, or you notice an entry has errors		--######################
+#################--		please consider submitting to us the information regarding the experimental evidence available		--######################
+#################--		Please fill the following information taking following the example provided				--######################
+################################################################################################################################################################
+PROTEIN_NAME,ORGANISM,RELATED_DOIS,RELATED_UNIP_IDS,PROMISCUITY_TYPE,CANONIC_ENZYMATIC_ACTIVITY,CANONIC_ENZYMATIC_ACTIVITY_ALTNAME,PROMISCUOS_ENZYMATIC_ACTIVITY,PROMISCUOS_ENZYMATIC_ACTIVITY_ALTNAME,CANONIC_SUBSTRATE,CANONIC_PRODUCTS,PROMISCUOS_SUBSTRATES,PROMISCUOS_PRODUCTS,CANONIC_ACTIVE_SITE,PROMISCUOS_ACTIVE_SITE,PROMISCUOS_ACTIVE_SITE_PDB,KM_CANONIC_REACT,KCAT_CANONIC_REACT,Kcat/Km_CANONIC_REACTION,KM_PROMISCUOS_REACT,KCAT_PROMISCUOS_REACTION,Kcat/Km_PROMISCUOS_REACTION,CANONIC_EC,PROMISCUOS_EC,DEASES_RELATED,SPECIAL_CONDITIONS_FOR_PROMISCUITY
+Dihydroorotase,Escherichia coli,10.1021/bi051021e ,P05020,catalytic,dihydroorotate dehydrogenase,,paraoxonase,,dihydroorotic acid,carbamoyl aspartate,paraoxon,,,,,,,1.2 ± 0.1 x 10^6 s-1 M-1,,,2.8 ± 0.3 s-1 M-1,3.5.2.3,3.1.8.1,,0.25% methanol (paraxon)
