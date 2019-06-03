@@ -19,8 +19,12 @@ export class ReactionCardComponent implements OnInit {
   }
 
   getMolecules = (type) => (this.reaction.cineticas.filter(cinetica => cinetica.tipo === type))
+  getNotes = (type) => (this.reaction.cineticas.filter(reaccion => reaccion.notes === type))
+  getECs = (type) => (this.reaction.cineticas.filter(reaccion => reaccion.ec === type))
 
   hasMolecules = (type) => (this.getMolecules(type).length > 0)
+  hasNotes = (type) => (this.getNotes(type).length > 0)
+  hasEcs = (type) => (this.getECs(type).length > 0)
 
   amountOfMolecules = (type) => this.getMolecules(type).length
 

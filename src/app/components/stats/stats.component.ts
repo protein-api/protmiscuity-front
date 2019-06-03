@@ -26,7 +26,7 @@ export class StatsComponent implements OnInit {
           "baseFont": "Verdana",
           "baseFontSize": "14",
           "palettecolors":"#ff5252",
-          "caption": "Distribution of organisms in ProtMiscuity",
+          "caption": "Percentage of organisms in ProtMiscuity",
           "subCaption": "Representation of organisms",
           "numberprefix": "",
           "showValues": "0",
@@ -95,7 +95,7 @@ export class StatsComponent implements OnInit {
           "baseFontSize": "14",
           "palettecolors":"#ff5252",
           "caption": "Protein families in ProtMiscuity",
-          "subCaption": "Distribution of proteins per family",
+          "subCaption": "Percentage of proteins per family",
           "numberprefix": "",
           "numberScaleUnit": "",
           "theme": "fint"
@@ -222,8 +222,8 @@ export class StatsComponent implements OnInit {
             "baseFont": "Verdana",
             "baseFontSize": "14",
             "palettecolors":"#bdbdbd,#212121,FF0000,#ff5252",
-            "caption": "Distribution of promiscuous reactions",
-            "subcaption": "Number of promiscuous reactions per protein",
+            "caption": "Number of promiscuous reactions per protein",
+            "subcaption": "Percentage of proteins with one or more promiscuous reactions",
             "startingangle": "120",
             "showlabels": "0",
             "showlegend": "1",
@@ -231,7 +231,7 @@ export class StatsComponent implements OnInit {
             "slicingdistance": "15",
             "showpercentvalues": "1",
             "showpercentintooltip": "0",
-            "plottooltext": "Number of promiscuos reactions: $label",
+            "plottooltext": "Number of promiscuous reactions: $label",
             "theme": "ocean"
         },
         "data": [
