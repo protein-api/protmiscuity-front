@@ -26,7 +26,7 @@ export class StatsComponent implements OnInit {
           "baseFont": "Verdana",
           "baseFontSize": "14",
           "palettecolors":"#ff5252",
-          "caption": "Organisms frequences",
+          "caption": "Percentage of organisms in ProtMiscuity",
           "subCaption": "Representation of organisms",
           "numberprefix": "",
           "showValues": "0",
