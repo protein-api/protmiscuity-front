@@ -18,7 +18,7 @@ export class ProteinListComponent implements OnInit{
     public isEmptyList:boolean = false;
     public proteins:IProtein[] = [];
     private subscription: Subscription;
-    showList:boolean = false
+    showList:boolean = true
     @ViewChild(MatSort) sort: MatSort;
     dataSource = new MatTableDataSource(this.proteins);
 

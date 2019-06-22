@@ -37,7 +37,7 @@ export class ProteinFullViewComponent implements OnInit {
 
 
   ngOnInit() {
-    $('.collapsible').collapsible();
+    $('.collapsible').collapsible()
     this.getProtein();
   }
 
@@ -48,3 +48,16 @@ export class ProteinFullViewComponent implements OnInit {
   splitSequence = (sequence:string) => sequence ? sequence.split(" ") : []
 
 }
+
+  //ocultamos los kegs si no hay
+  //getKegg= (type) => (this.protein.codigoKegg.filter(proteina => protein.codigoKegg === type))
+  //hasKegg = (type) => (this.getKegg(type).length > 0)
+  //ocultamos los kegs si no hay
+  //getKegg= (type) => (this.protein.codigoKegg.filter(proteina => protein.codigoKegg === type))
+  //hasKegg = (type) => (this.getKegg(type).length > 0)
+  //ocultamos las notas si no hay
+  //getNote = (type) => (this.proteina.notes.filter(proteina => proteina.notes === type))
+  //hasNote = (type) => (this.getNote(type).length > 0)
+  // RAMA
+  // para armar lista de ECS
+  // getECList = () => this.protein.estructurasPDB[0] ? this.protein.estructurasPDB[0].codigo.split(",") : []

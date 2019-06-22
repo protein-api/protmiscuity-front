@@ -75,7 +75,6 @@ export class StatsComponent implements OnInit {
           {"label": "Pseudomonas fluorescens","value": "1.05"},
           {"label": "Microbacterium hydrocarbonoxydans","value": "1.05"},
           {"label": "Rhizomucor miehei","value": "2.1993157895"},
-          {"label": "Pseudozyma antarctica (Yeast) (Candida antarctica)","value": "3.296"}
         ]
       }
     }
