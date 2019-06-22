@@ -21,7 +21,9 @@ export class SearchComponent implements OnInit {
 
   ngOnInit() {
     const search = this.searchHelper.get()
-    if(search && !search.fromHome) {
+    if(search.searchType === 'SHOW_ALL') {
+      this.getAllProteins()
+    } else if(search && !search.fromHome) {
       this.textSearch = search.searchText
       this.searchType = search.searchType
       this.searchBy(this.searchType)
@@ -34,6 +36,7 @@ export class SearchComponent implements OnInit {
 
   getAllProteins = () => {
     this.searchHelper.pop()
+    this.searchHelper.add({searchType:'SHOW_ALL', searchText:'', fromHome:false})
     this.router.navigateByUrl('/proteins')
     this.proteinDataService.getAll()
     this.textSearch = null
