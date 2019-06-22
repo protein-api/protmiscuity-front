@@ -26,11 +26,11 @@
         <div class="divider"></div>
         <p>Uniprot Id: <strong>{{protein.codigoUniProt}}</strong></p>
         <div class="divider"></div>
-        <p>Kegg Id: <strong>{{protein.codigoKegg}}</strong></p>
-        <div class="divider"></div>
-        <p>EC's: <strong>{{getEcs()}}</strong></p>
-        <div class="divider"></div>
-        <p>Notes: <strong>{{protein.notes}}</strong></p>
+        <p *ngIf="hasKeggId()">Kegg Id: <strong>{{protein.codigoKegg}}</strong></p>
+        <div *ngIf="hasKeggId()" class="divider"></div>
+        <p *ngIf="hasEc()">EC: <strong>{{getEcs()}}</strong></p>
+        <div *ngIf="hasEc()" class="divider"></div>
+        <p *ngIf="hasNotes()">Notes: <strong>{{protein.notes}}</strong></p>
         </div>
     </li>
 

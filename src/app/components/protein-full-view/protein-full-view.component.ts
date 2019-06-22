@@ -55,6 +55,12 @@ export class ProteinFullViewComponent implements OnInit {
     return '';
   }
 
+  hasKeggId = () => (this.protein.codigoKegg !== 'Not assigned')
+
+  hasNotes = () => (this.protein.notes !== '')
+
+  hasEc = () => (this.getEcs() !== '')
+
 }
 
   //ocultamos los kegs si no hay
