@@ -47,6 +47,14 @@ export class ProteinFullViewComponent implements OnInit {
 
   splitSequence = (sequence:string) => sequence ? sequence.split(" ") : []
 
+  getEcs = () => {
+    if(this.protein) {
+      const ecs = this.protein.reacciones.map(r => r.ec);
+      return ecs.filter(ec => ec !== 'Not assigned').join(', ');
+    }
+    return '';
+  }
+
 }
 
   //ocultamos los kegs si no hay

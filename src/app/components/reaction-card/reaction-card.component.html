@@ -33,9 +33,9 @@
           <p>Type: <strong>{{reaction.tipo}}</strong></p>
           <div class="divider"></div>
           <p *ngIf="hasEcs()">EC: <strong>{{reaction.ec}}</strong></p>
-          <div class="divider"></div>
+          <div *ngIf="hasEcs()" class="divider"></div>
           <p *ngIf="hasNotes()">Notes: <strong>{{reaction.notes}}</strong></p>
-          <div class="divider"></div>
+          <div *ngIf="hasNotes()" class="divider"></div>
 
         </div>
 
